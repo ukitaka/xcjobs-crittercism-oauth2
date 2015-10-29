@@ -5,7 +5,7 @@ require 'xcjobs/crittercism/oauth2/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "xcjobs-crittercism-oauth2"
-  spec.version       = Xcjobs::Crittercism::Oauth2::VERSION
+  spec.version       = XCJobs::Crittercism::OAuth2::VERSION
   spec.authors       = ["ukitaka"]
   spec.email         = ["yuki.takahashi.1126@gmail.com"]
 
