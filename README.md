@@ -31,6 +31,9 @@ XCJobs::Distribute::Crittercism:OAuth2.new do |t|
 end
 ```
 
+```
+rake distribute:crittercism_oauth2
+```
 
 ## Development
 

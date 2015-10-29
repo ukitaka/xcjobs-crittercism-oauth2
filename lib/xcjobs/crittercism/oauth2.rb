@@ -57,7 +57,7 @@ module XCJobs
 
         def process_symbols(resource_id)
           json = '{ "uploadUuid": "' + resource_id + '", "filename":"upload.zip" }'
-          response = `/usr/bin/curl  --write-out %{http_code} --silent --output /dev/null -X POST "#{process_symbol_url}" --silent -d '#{json}' #{oauth_header} -H 'Content-Type: application/json'`
+          response = `/usr/bin/curl  --write-out %{http_code} --silent --output /dev/null -X POST "#{@process_symbol_url}" --silent -d '#{json}' #{@oauth_header} -H 'Content-Type: application/json'`
           if response != "200" then
             throw "Crittercism Resource #{resource_id} Processed: FAILED #{response}"
           end
